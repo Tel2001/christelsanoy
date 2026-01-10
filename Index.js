@@ -113,7 +113,10 @@ function ThemeToggle() {
         document.getElementById('sun').style.backgroundColor = '#232528';
         document.documentElement.style.setProperty("--primary-text-color", "#232528");
 
-
+        document.getElementById('contact-linkedin').style.backgroundImage = "url('./assets/icon/linkedin.png')";
+        document.getElementById('contact-behance').style.backgroundImage = "url('./assets/icon/behance.png')";
+        document.getElementById('contact-github').style.backgroundImage = "url('./assets/icon/github.png')";
+        document.getElementById('contact-facebook').style.backgroundImage = "url('./assets/icon/facebook.png')";
 
 
         darkmode = false;
