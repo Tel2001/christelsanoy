@@ -1,26 +1,27 @@
-.contact-container{
+.contact-container {
     margin-top: 20px;
     width: 90%;
     max-width: 1320px;
     padding: 40px 40px;
 }
-.contact-container-child{
+
+.contact-container-child {
     color: var(--primary-text-color);
 }
-.contact-aside{
+
+.contact-aside {
     width: 400px;
-    
 }
 
-.details-container > p{
+.details-container>p {
     margin-top: -20px;
 }
 
-.contact-social-medias-container{
+.contact-social-medias-container {
     display: flex;
 }
 
-.contact-social-media-container{
+.contact-social-media-container {
     width: 42px;
     height: 42px;
     margin-right: 10px;
@@ -30,47 +31,50 @@
     transition: .5s;
 }
 
-.contact-social-media-container:hover{
+.contact-social-media-container:hover {
     opacity: .6;
     transition: .5s;
     cursor: pointer;
 }
 
-#contact-linkedin{
-    background-image: url('/assets/icon/linkedin.png');
+#contact-linkedin {
+    background-image: url('./assets/icon/linkedin.png');
 }
 
-#contact-github{
-    background-image: url('/assets/icon/github.png');
+#contact-github {
+    background-image: url('./assets/icon/github.png');
 }
 
-#contact-behance{
-    background-image: url('/assets/icon/behance.png');
+#contact-behance {
+    background-image: url('./assets/icon/behance.png');
 }
 
-#contact-facebook{
-    background-image: url('/assets/icon/facebook.png');
+#contact-facebook {
+    background-image: url('./assets/icon/facebook.png');
 }
-.contact-container-child-2{
+
+.contact-container-child-2 {
     display: flex;
 }
-.contact-main{
+
+.contact-main {
     margin-left: 100px;
     width: 60%;
 }
 
-.contact-form{
+.contact-form {
     display: flex;
     flex-direction: column;
 }
 
-#contact-form{
+#contact-form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-input, textarea{
+input,
+textarea {
     font-family: "Inter", sans-serif;
     padding: 10px 4px;
     border-radius: 4px;
@@ -79,7 +83,7 @@ input, textarea{
     font-size: 14px;
 }
 
-#contact-form > button{
+#contact-form>button {
     padding: 10px 4px;
     border: none;
     background-color: var(--primary-color);
@@ -89,14 +93,13 @@ input, textarea{
     transition: .5s;
 }
 
-
-#contact-form > button:hover{
+#contact-form>button:hover {
     opacity: .6;
     transition: .5s;
     cursor: pointer;
 }
 
-footer{
+footer {
     width: 100%;
     max-width: 1440px;
     padding: 20px;
@@ -104,32 +107,31 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #232528;   
+    background-color: #232528;
     margin-bottom: -20px;
-    
 }
 
-footer > p{
+footer>p {
     margin-top: -16px;
     font-size: 14px;
 }
 
 @media (max-width:1400px) {
-    .contact-container{
+    .contact-container {
         width: 84%;
     }
 }
 
 @media (max-width:800px) {
-    .contact-container-child{
+    .contact-container-child {
         flex-direction: column;
         align-items: flex-start;
     }
-    .contact-main{
+    .contact-main {
         width: 100%;
         margin: 0;
     }
-    .contact-aside{
+    .contact-aside {
         width: 100%;
     }
 }
