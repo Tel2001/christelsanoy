@@ -53,6 +53,49 @@
     background-image: url('./assets/icon/facebook.png');
 }
 
+.tool-tip-text{
+    font-size:12px;
+}
+
+#linkedin-link-2{
+    display: none;
+    position: absolute;
+}
+
+#linkedin-link-container:hover #linkedin-link-2{
+    display: block;
+}
+
+#github-link-2{
+    display: none;
+    position: absolute;
+    transform: translateX(-30%);
+}
+
+#github-link-container:hover #github-link-2{
+    display: block;
+}
+
+#behance-link-2{
+    display: none;
+    position: absolute;
+    transform: translateX(-30%);
+}
+
+#behance-link-container:hover #behance-link-2{
+    display: block;
+}
+
+#facebook-link-2{
+    display: none;
+    position: absolute;
+    transform: translateX(-30%);
+}
+
+#facebook-link-container:hover #facebook-link-2{
+    display: block;
+}
+
 .contact-container-child-2 {
     display: flex;
 }

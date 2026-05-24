@@ -30,18 +30,8 @@ a:focus {
 }
 
 .project-container {
-    margin-top: -12px;
+    border-bottom: 1px solid #53536e ;
     padding: 0 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, .4);
-    overflow-y: hidden;
-    overflow-x: hidden;
-    height: auto;
-    transition: .5s;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    animation-name: slide-up;
-    animation-duration: 1s;
 }
 
 .project-content {
@@ -79,7 +69,7 @@ a:focus {
     transition: .5s;
     margin-left: -20px;
     overflow-x: hidden;
-    z-index: -1;
+    z-index: -3;
 }
 
 .project-container:hover .project-background {
@@ -102,30 +92,39 @@ a:focus {
     cursor: pointer;
 }
 
-.project-overview {
-    width: 280px;
-    height: 320px;
-    position: absolute;
-    left: 20%;
-    top: 220%;
-    background-color: skyblue;
-    transition: .5s;
-    opacity: 0;
-    z-index: -2;
-    margin-left: 300px;
-    margin-top: -40px;
-    box-shadow: 1px 1px 8px #53536e;
+.project-overview-1 {
+   width: 240px;
+   height: 300px;
+   position: absolute;
+   transform: translate(160%,-60%);
+   z-index: -1;
+   opacity: 0%;
+   transition: .5s;
 }
 
-.project-container:hover .project-overview {
-    display: flex;
-    transition: .5s;
-}
-
-.project-container-1:hover .project-overview-1 {
-    transition: .5s;
+.project-container-1:hover .project-overview-1{
+    display: block;
     opacity: 100%;
     z-index: 1;
+    transition: .5s;
+    
+}
+
+.project-overview-3 {
+   width: 280px;
+   height: 300px;
+   position: absolute;
+   transform: translate(130%,-50%);
+   opacity: 0;
+   z-index: -1;
+   transition: .5s;
+}
+
+.project-container-3:hover .project-overview-3{
+    display: block;
+    opacity: 100%;
+    z-index:1;
+    transition: .5s;
 }
 
 #edgebook {
@@ -161,18 +160,16 @@ a:focus {
 }
 
 .project-overview-3 {
-    margin-top: 180px;
-    height: 198px;
+    
 }
 
 .project-container-3:hover .project-overview-3 {
-    opacity: 100%;
-    z-index: 6;
+   
 }
 
 .project-overview-4,
 .project-overview-5 {
-    margin-top: 180px;
+    margin-top: -180px;
     background-color: transparent;
     box-shadow: none;
 }
@@ -241,6 +238,19 @@ a:focus {
     }
 }
 
+@media (max-width:1300px){
+    /*.project-container-3:hover .project-overview-3 {
+        opacity: 100%;
+        z-index: 6;
+        margin-top: 60px;
+    }
+    .project-container-1:hover .project-overview-1 {
+        opacity: 100%;
+        z-index: 6;
+        margin-top: -80px;
+    }*/
+}
+
 @media (max-width: 1400px) {
     .projects-container {
         width: 84%;
@@ -254,13 +264,10 @@ a:focus {
         padding: 0;
         justify-self: flex-start;
     }
-    .project-overview {
+    .project-overview-1, .project-overview-3 {
         position: relative;
-        top: 0;
-        margin: 0;
-        padding: 0;
-        transition: .5s;
-        left: 0;
+        transform: translate(0,0);
+        height: 300px;
     }
     .project-container {
         transition: .5s;
@@ -269,9 +276,7 @@ a:focus {
     .project-background {
         height: 100px;
     }
-    .project-container:hover .project-overview {
-        height: 420px;
-    }
+    
     .project-container-6:hover .project-overview-6 {
         height: 240px;
     }
@@ -283,7 +288,7 @@ a:focus {
     }
     .project-container-3:hover {
         display: inline;
-        height: 320px;
+        height: 310px;
     }
     .project-container-3:hover .project-overview-3 {
         background-color: transparent;
@@ -291,28 +296,14 @@ a:focus {
     .project-container:hover .project-overview {
         background-color: transparent;
     }
-    .project-container-2:hover {
-        height: 420px;
-    }
-    .project-container-2:hover .project-overview-2 {
-        height: 420px;
-    }
+    
     .project-container-1:hover {
         height: 420px;
     }
     .project-container:hover .project-background {
         width: 110%;
     }
-    .project-overview-5,
-    .project-overview-6 {
-        display: flex;
-        left: 0;
-        top: 0;
-        margin: 0;
-        padding: 0;
-        justify-self: flex-start;
-        align-self: flex-start;
-    }
+    
     /*
     animation-name: down-slide-effect;
         animation-duration: 1s;
@@ -333,5 +324,10 @@ a:focus {
     #tothemoon-video-2,
     #tothemoon-video {
         width: 100%;
+    }
+
+    .project-overview-1{
+        position: relative;
+        transform: translate(0,0);
     }
 }

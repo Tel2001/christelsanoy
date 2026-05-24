@@ -13,7 +13,7 @@
     width: inherit;
     height: auto;
     /*border: 1px solid pink;*/
-    margin: 20px 0;
+    margin: 20px 0; 
     display: flex;
 }
 
@@ -38,8 +38,29 @@
 .about-me-content-2{
     display:flex;
     flex-direction: column;
-    margin-top: -40px;
+    margin-top: 20px;
 }
+
+.experience-container{
+    display: flex;
+}
+
+.experience-child{
+    margin: 0 40px;
+}
+.experience-aside{
+    width: 400px;
+}
+
+.experience-main{
+    width: 600px;
+    font-size: 18px;
+}
+
+.experience-main > p, .experience-main> h3{
+    margin: 0;
+}
+
 .education-container{
     display: flex;
 }
@@ -48,7 +69,10 @@
     margin: 0 40px;
 }
 .school-name{
-    margin-top: -20px;
+   margin: 0;
+}
+.school-year{
+    margin: 0;
 }
 
 .project-subtitle{
@@ -144,6 +168,14 @@
     background-image: url('./assets/icon/react.png');
 }
 
+.php{
+    background-image: url('./assets/icon/php.png');
+}
+
+.mySql{
+    background-image: url('./assets/icon/mysql_PNG9.png');
+}
+
 .adobe-illustrator{
     background-image: url('./assets/icon/adobeillustrator.svg');
     width: 52px;
@@ -194,6 +226,11 @@
         width: 90%;
         
     }
+    .experience-container{
+        width: 100%;
+        flex-direction: column;
+        
+    }
     .education-child > p{
         width: 100% ;
         max-width: 800px;
@@ -202,10 +239,9 @@
     .about-me-aside{
         width: 90%;
     }
-
+   
     .about-me-child{
         margin: 0;
-   
     }
 
     .my-tech-stack{
@@ -221,6 +257,15 @@
     .my-tech-stack{
         display: flex;
         flex-direction: column;
+    }
+
+    .experience-main{
+        width: 90%;
+
+    }
+
+    .experience-container{
+        justify-content: center;
     }
 }
 

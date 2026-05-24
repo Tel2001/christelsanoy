@@ -166,3 +166,18 @@ function FacebookHover() {
 function FacebookMouseOut() {
     document.getElementById('facebook-link').style.display = 'none';
 }
+function ShowDownloadCV(){
+    document.getElementById('dowlonad-cv-alert-container').classList.remove('hide');
+}
+
+function DownloadCV(){
+    document.getElementById('dowlonad-cv-alert-container').classList.add('hide');
+}
+
+function HideDownloadCV(){
+    document.getElementById('dowlonad-cv-alert-container').classList.add('hide');
+}
+
+document.getElementById('').addEventListener('mouseover',()=>{
+    document.getElementById('').classList.add
+})

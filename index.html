@@ -22,8 +22,8 @@
             <p id="message-text">Sample!</p>
         </div>
     </div>
-    <div class="cover" id="cover"></div>
-    <div class="opening-container show-anim" id="opening">
+    <div class="cover hide" id="cover"></div>
+    <div class="opening-container show-anim hide" id="opening">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none">
             <defs>
                 <mask id="text-mask">
@@ -59,7 +59,11 @@
         </div>
         <div class="side-btn-container">
             <div class="hire-btn-container">
-                <a href="#contact-container"><button >Hire Me</button></a>
+                <a href="#contact-container"><button id="hire-btn">Hire Me</button></a>
+            </div>
+            <div class="cv-btn-container">
+                <button class="cv-btn" onclick="ShowDownloadCV()"><div class="cv-btn-icon"></div></button>
+                <div class="tool-tip-cv">Download CV</div>
             </div>
             <div id="hamburger-btn" class="hamburger-btn-container" onclick="HamburgerBtnClick()">
             </div>
@@ -76,14 +80,17 @@
                     <div class="sun" id="sun"></div>
                     <div class="moon moon-1" id="moon"></div>
                 </div>
+                <div class="tool-tip-theme">Theme</div>
             </div>
         </div>
     </div>
     <div class="hero-container" id="hero-container">
         <div class="brief-about-me-container">
             <p>Hi! I'm Tel</p>
-            <h1>UI Designer | Front-end Web Developer</h1>
+            <h1>UI Designer and Front-end Web Developer</h1>
             <p style="display: none;">Bachelor of Science in Information Technology Student</p>
+            <p id="professional-summary">A graduate of Bachelor of Science in Information Technology. I create seamless user experiences by blending well-structured code with intuitive and aesthetic design. 
+            </p>
         </div>
         <div class="background-container"></div>
         <div class="tools-container">
@@ -121,18 +128,39 @@
         <div class="opening-line">
             <p>Know more about me</p>
         </div>
-        <div class="about-me-content about-me-content-1">
+        <div class="about-me-content about-me-content-1 hide">
             <div class="about-me-aside about-me-child">
                 <h1>Hi! I am Christel J. Sanoy, and you can call me Tel.</h1>
             </div>
             <div class="about-me-main about-me-child">
-                <p>I am a UI Designer and Front-end Web Developer, currently a BSIT student at Partido State University. I create seamless user experiences by blending well-structured code with intuitive and aesthetic design. I’m passionate about building
-                    clean interfaces and continuously improving my skills in modern web technologies and design tools.
+                <p>I am a UI Designer and Front-end Web Developer with a degree of Bachelor of Science in Information Technology. I create seamless user experiences by blending well-structured code with intuitive and aesthetic design. I’m passionate about building
+                   clean interfaces and continuously improving my skills in modern web technologies and design tools.
                 </p>
             </div>
         </div>
 
         <div class="about-me-content about-me-content-2">
+            <p style="margin: 0 40px;width: 90%;">Experience</p>
+
+            <div class="experience-container">
+                <div class="experience-child experience-aside">
+                    <h1>INTERN</h1>
+                </div>
+                <div class="experience-child experience-main">
+                    <h3>Municipal Social Welfare and Development Office</h3>
+                    <p>Local Government Unit of Sagñay</p>
+                    <p>February 2026 - April 2026</p>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li>Created and organized Excel spreadsheets for records management and reporting</li>
+                        <li>Applied sorting, filtering, and formulas to improve data accuracy and efficiency </li>
+                        <li>Supported daily clerical and data management tasks </li>
+                        <li>Develop a Web-Based Solo Parent Management System using HTML, CSS, JavaScript, 
+                        Bootstrap, PHP and MySQL </li>
+                    </ul>
+                </div>
+            </div>
+
             <p style="margin: 0 40px;width: 90%;">My Educational Background</p>
             <div class="education-container education-container-1">
 
@@ -142,12 +170,12 @@
                 <div class="about-me-main education-main education-child">
                     <h3 class="school-degree">Bachelor of Science in Information Technology</h3>
                     <p class="school-name">Partido State University</p>
+                    <p class="school-year">June 2026</p>
 
-                    <p>It is a great experience studying at my university. Throughout my college journey, I have honed my skills in web development, database development, game development, and project management. I am now taking my internship to gain hands-on
-                        experience in a professional environment.
+                    <p>It was a great experience studying at my university. Throughout my college journey, I have honed my skills in web development, database development, game development, and project management.
                     </p>
 
-                    <div class="projects-container">
+                    <div class="projects-container hide">
                         <p style="width: 90%;">School Projects</p>
                         <div class="project-container project-container-5">
                             <a>
@@ -210,7 +238,7 @@
             </div>
             <div class="my-tech-stack">
                 <div class="about-me-aside my-tech-stack-child">
-                    <h1>Front-end Web Development</h1>
+                    <h1>Front-End Web Development</h1>
                 </div>
                 <div class="about-me-main my-tech-stack-child">
                     <div class="tech-stacks-container">
@@ -218,6 +246,19 @@
                         <div class="tech-stack css-1"></div>
                         <div class="tech-stack javascript-1"></div>
                         <div class="tech-stack react-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-tech-stack">
+                <div class="about-me-aside my-tech-stack-child">
+                    <h1>Back-End Web Development</h1>
+                </div>
+                <div class="about-me-main my-tech-stack-child">
+                    <div class="tech-stacks-container">
+                        <div class="tech-stack php"></div>
+                        <div class="tech-stack mySql"></div>
+                        <div class="tech-stack expressJS"></div>
+                        
                     </div>
                 </div>
             </div>
@@ -245,7 +286,7 @@
             </a>
         </div>
 
-        <div class="project-container project-container-2">
+        <div class="project-container project-container-2 hide">
             <a>
                 <div class="project-content">
 
@@ -265,7 +306,7 @@
 
         </div>
         <div class="project-container project-container-3">
-            <a>
+            
                 <div class="project-content">
 
                     <h1 class="project-title">EIRMS</h1>
@@ -279,10 +320,10 @@
                 </div>
                 <div class="project-background"></div>
                 <div class="project-overview project-overview-3" id="eirms"></div>
-            </a>
+            
 
         </div>
-        <div class="project-container project-container-4" id="project-container-4">
+        <div class="project-container project-container-4 hide" id="project-container-4">
             <a>
                 <div class="project-content">
 
@@ -326,17 +367,22 @@
                     </div>
                 </div>
                 <div class="contact-social-medias-container">
-                    <a href="https://www.linkedin.com/in/christel-sanoy-3b0041184/">
-                        <div class="contact-social-media-container" id="contact-linkedin"></div>
+                    <a id="linkedin-link-container" href="https://www.linkedin.com/in/christel-sanoy-3b0041184/">
+                        <div class="contact-social-media-container" id="contact-linkedin">
+                        </div>
+                        <p class="tool-tip-text" id="linkedin-link-2">linkedin.com/in/christel-sanoy-3b0041184/</p>
                     </a>
-                    <a href="https://github.com/Tel2001">
+                    <a id="github-link-container" href="https://github.com/Tel2001">
                         <div class="contact-social-media-container" id="contact-github"></div>
+                        <p class="tool-tip-text" id="github-link-2">github.com/Tel2001</p>
                     </a>
-                    <a href="https://www.behance.net/christelsanoy">
+                    <a id="behance-link-container" href="https://www.behance.net/christelsanoy">
                         <div class="contact-social-media-container" id="contact-behance"></div>
+                        <p class="tool-tip-text" id="behance-link-2">behance.net/christelsanoy</p>
                     </a>
-                    <a href="https://www.facebook.com/ChristelSanoy/">
+                    <a id="facebook-link-container" href="https://www.facebook.com/ChristelSanoy/">
                         <div class="contact-social-media-container" id="contact-facebook"></div>
+                        <p class="tool-tip-text" id="facebook-link-2">facebook.com/ChristelSanoy/</p>
                     </a>
                 </div>
             </div>
@@ -355,7 +401,15 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="dowlonad-cv-alert-container hide" id="dowlonad-cv-alert-container">
+        
+        <div class="download-cv-alert-content">
+            <button id="download-CV-close-btn" onclick="HideDownloadCV()"><div class="close-icon"></div></button>
+            <div class="download-btn-container">
+            <div id="pdf-icon"></div> <p>Download CHRISTEL SANOY - Resume.pdf</p><div><a  href="/public/CHRISTEL SANOY - Resume.pdf" download onclick="DownloadCV()"><div id="download-icon"></div></a></div>
+            </div>
+        </div>
     </div>
     <footer>
         <h3 style="color:white">TEL.<span style="color: #1A8EE3;">DEV</span></h3>

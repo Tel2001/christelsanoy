@@ -26,12 +26,12 @@
 
 .brief-about-me-container {
     position: absolute;
-    top: 46%;
-    width: 600px;
+    top: 36%;
+    width: 400px;
 }
 
 .brief-about-me-container>:nth-child(1) {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .brief-about-me-container>p {
@@ -41,8 +41,10 @@
 }
 
 .brief-about-me-container>h1 {
-    color: var(--primary-text-color);
+    color: var(--primary-color);
     transition: 1s;
+    font-size: 48px;
+    font-weight: bolder;
 }
 
 .img-container {
@@ -376,7 +378,7 @@
     }
     .social-media-accs-container {
         position: absolute;
-        top: 64%;
+        top: 80%;
         display: flex;
     }
     .soc-media-container {
@@ -386,7 +388,7 @@
 
 @media (max-width:800px) {
     .hero-container {
-        margin-bottom: 80px;
+        margin-bottom: 240px;
     }
     .background-container {
         position: absolute;
@@ -414,11 +416,11 @@
         width: 100%;
         left: 0;
         top: 80%;
-        margin-top: 100px;
+        margin-top: 260px;
         display: flex;
         justify-content: center;
     }
-    .brief-about-me-container>h1 {
+    .brief-about-me-container>h1, #professional-summary {
         text-align: center;
     }
     #github-link {
@@ -430,6 +432,15 @@
     .background-container {
         margin-left: 10px;
     }
+
+    .social-media-accs-container {
+        width: 100%;
+        left: 0;
+        top: 80%;
+        margin-top: 260px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media(max-width:650px) {
@@ -440,7 +451,7 @@
         width: 100%;
         left: 0;
         top: 80%;
-        margin-top: 120px;
+        margin-top: 300px;
         display: flex;
         justify-content: center;
     }
@@ -490,7 +501,12 @@
         align-items: center;
     }
     .social-media-accs-container {
-        margin-top: -100px;
+        width: 100%;
+        left: 0;
+        top: 80%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
     }
     .tools-container {
         scale: 60%;
@@ -498,7 +514,7 @@
     }
     .hero-container {
         margin-top: 100px;
-        margin-bottom: 0;
+        margin-bottom: 140px;
         height: 65vh;
     }
 }
