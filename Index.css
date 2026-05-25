@@ -155,7 +155,7 @@ body{
 .cv-btn-icon{
     width: 30px;
     height: 30px;
-    background-image: url('/assets/icon/cv-2.png');
+    background-image: url('./assets/icon/cv-2.png');
     background-size: contain;
     background-position: center;
 }
@@ -370,14 +370,14 @@ body{
     height: 30px;
     background-position: center;
     background-size: contain;
-    background-image: url('/assets/icon/pdf.png');
+    background-image: url('./assets/icon/pdf.png');
     margin: 0 4px;
 }
 
 #download-icon{
     width: 30px;
     height: 30px;
-    background: url('/assets/icon/download.png');
+    background: url('./assets/icon/download.png');
     background-position: center;
     background-size: contain;
     margin: 0 4px;
@@ -397,7 +397,7 @@ body{
 .close-icon{
     width: 30px;
     height: 30px;
-    background: url('/assets/icon/close.png');
+    background: url('./assets/icon/close.png');
     background-position: center;
     background-size: contain;
     margin: 0 4px;
