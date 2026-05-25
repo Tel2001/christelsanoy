@@ -24,7 +24,9 @@
     display: none;
 }
 
-
+.test-border{
+    border: 1px solid pink;
+}
 
 @keyframes main-background-anim {
     from{}
@@ -495,8 +497,59 @@ body{
             margin-left: 600px;
         }
     }
-    
-   
-    
+}
 
+@media (max-width:600px) {
+
+    body{
+        max-width: 600px;
+        width: 100%;
+    }
+    
+    .navigation-container{
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width:500px) {
+
+    body{
+        max-width: 500px;
+        width: 100%;
+    }
+    
+    .navigation-container{
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width:400px) {
+
+    body{
+        max-width: 400px;
+        width: 100%;
+        
+    }
+    
+    .navigation-container, #navigation-container{
+        width: 100%;
+        max-width: 400px;
+        
+    }
+}
+
+@media (max-width:360px) {
+     body{
+        max-width: 360px;
+        width: 100%;
+        
+    }
+    
+    .navigation-container, #navigation-container{
+        width: 100%;
+        max-width: 360px;
+        
+    }
 }

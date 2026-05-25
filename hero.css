@@ -522,12 +522,12 @@
 @media (max-width:360px) {
     .hero-container {
         margin: 0;
-        padding: 0;
+        padding: 0 0 200px 0 ;
         height: 100vh;
     }
     .tools-container,
     .background-container {
-        margin-top: 10px;
+        margin-top: -10px;
         padding: 0;
         margin-bottom: 0;
     }
@@ -538,7 +538,7 @@
         align-items: center;
     }
     .social-media-accs-container {
-        margin: 100px 0 0 0;
+        margin: 360px 0 0 0;
         padding: 0;
     }
 }
