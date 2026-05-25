@@ -269,8 +269,25 @@
     }
 }
 
-@media (max-width:360px) {
-    .about-me-container{
-     
+@media(max-width:500px){
+    .experience-container{
+        width: 100%;
+        align-items: center;
+    }
+    .experience-child, .experience-aside{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width:400px) {
+   .experience-container{
+        width: 100%;
+        align-items: center;
+    }
+    .experience-child, .experience-aside{
+        width: 90%;
+        padding: 0;
+        margin: 0;
     }
 }
