@@ -5,12 +5,23 @@ function HamburgerBtnClick() {
         document.getElementById('nav-links').classList.remove('display-navlinks');
         document.getElementById('nav-links').classList.add('nav-links-show-anim');
         document.getElementById('nav-links').classList.remove('nav-links-hide-anim');
+        document.getElementById('theme-btn').style.opacity = '0';
+        document.getElementById('theme-btn').style.transition = '.5s';
+        document.getElementById('cv-btn').style.opacity = '0';
+        document.getElementById('cv-btn').style.transition = '.5s';
+        document.getElementById('hamburger-btn').style.transform = 'translate(100%)';
+        document.getElementById('hamburger-btn').style.transition = '1s';
         click = true;
     } else if (click === true) {
 
         document.getElementById('nav-links').classList.remove('nav-links-show-anim');
         document.getElementById('nav-links').classList.add('nav-links-hide-anim');
-
+        document.getElementById('theme-btn').style.opacity = '100%';
+        document.getElementById('theme-btn').style.transition = '.5s';
+        document.getElementById('cv-btn').style.opacity = '100%';
+        document.getElementById('cv-btn').style.transition = '.5s';
+        document.getElementById('hamburger-btn').style.transform = 'translate(0)';
+        document.getElementById('hamburger-btn').style.transition = '1s';
         setTimeout(() => {
             document.getElementById('nav-links').classList.add('display-navlinks');
         }, 900)

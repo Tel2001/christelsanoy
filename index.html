@@ -15,7 +15,7 @@
     <script src="Index.js"></script>
 </head>
 
-<body id="body">
+<body id="body" class="">
     <div class="alert-container hide" id="alert-container">
         <div id="message-feedback">
             <div class="close-container" id="close-container"></div>
@@ -57,17 +57,17 @@
                 <li id="contact"><a href="#contact-container">Contact</a></li>
             </ul>
         </div>
-        <div class="side-btn-container">
+        <div class="side-btn-container ">
             <div class="hire-btn-container">
                 <a href="#contact-container"><button id="hire-btn">Hire Me</button></a>
             </div>
             <div class="cv-btn-container">
-                <button class="cv-btn" onclick="ShowDownloadCV()"><div class="cv-btn-icon"></div></button>
+                <button id="cv-btn" class="cv-btn" onclick="ShowDownloadCV()"><div class="cv-btn-icon"></div></button>
                 <div class="tool-tip-cv">Download CV</div>
             </div>
             <div id="hamburger-btn" class="hamburger-btn-container" onclick="HamburgerBtnClick()">
             </div>
-            <div class="theme-mode-container" onclick="ThemeToggle()">
+            <div id="theme-btn" class="theme-mode-container" onclick="ThemeToggle()">
                 <div class="dark-mode-container">
                     <div class="ray ray-1" id="ray-1"></div>
                     <div class="ray ray-2" id="ray-2"></div>
