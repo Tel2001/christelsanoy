@@ -11,6 +11,8 @@ function HamburgerBtnClick() {
         document.getElementById('cv-btn').style.transition = '.5s';
         document.getElementById('hamburger-btn').style.transform = 'translate(100%)';
         document.getElementById('hamburger-btn').style.transition = '1s';
+        document.getElementById('hero-container').style.zIndex = '-1';
+        document.getElementById('hero-container').style.transition = '1s';
         click = true;
     } else if (click === true) {
 
@@ -22,6 +24,8 @@ function HamburgerBtnClick() {
         document.getElementById('cv-btn').style.transition = '.5s';
         document.getElementById('hamburger-btn').style.transform = 'translate(0)';
         document.getElementById('hamburger-btn').style.transition = '1s';
+        document.getElementById('hero-container').style.zIndex = '1';
+        document.getElementById('hero-container').style.transition = '1s';
         setTimeout(() => {
             document.getElementById('nav-links').classList.add('display-navlinks');
         }, 900)
