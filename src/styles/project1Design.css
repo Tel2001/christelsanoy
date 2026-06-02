@@ -28,3 +28,46 @@
 .gradient-text{
     color:li
 }
+
+.card-size-default{
+    width: 300px;
+    transition: 1s;
+
+    @media (max-width:480px) {
+        width: 280px;
+        transition: 1s;
+    };
+
+    @media (max-width:400px) {
+        width: 200px;
+        transition: 1s;
+    }
+}
+
+.card-size-1{
+    @media (max-width:480px) {
+        width: 280px;
+        transition: 1s;
+    };
+
+    @media (max-width:400px) {
+        width: 200px;
+        transition: 1s;
+    }
+}
+
+.card-list{
+    @media (max-width:480px) {
+        margin: 8px 0 8px 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.hero-container{
+    @media (max-width:480px) {
+        height: auto;
+        padding-bottom: 0;
+    }
+}
