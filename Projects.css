@@ -53,6 +53,15 @@ a:focus {
 .project-techstack-container {
     display: flex;
     margin-top: -18px;
+
+    @media (max-width:600px) {
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+.project-techstack-container-child{
+    display: flex;
 }
 
 .project-techstack {
